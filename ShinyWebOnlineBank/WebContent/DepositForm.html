@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shiny Bank- DepositForm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="HomePage.html">
+      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+      Shiny Web Online Banking</a>
+
+      <ul class="nav navbar-nav">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li class="active"><a href="#">Deposit Form</a></li>
+        <li><a href="DepositConfirm.html">Deposit Confirmation</a></li>
+        <li><a href="TransactionHistory.html">Balance/Transaction History</a></li>
+		<li><a href="#">Transaction History Item Detail</a></li>
+		<li><a href="#">List of Accounts</a></li>
+      </ul>
+</nav>
+
+<h3> Deposit Transaction Form </h3>
+
+<label for="type">Transaction Type</label>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Transaction Type
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Checkings Account</a></li>
+    <li><a href="#">Savings Account</a></li>
+    <li><a href="#">Transfer</a></li>
+  </ul>
+</div>
+
+<div class="form-group">
+  <label for="accname">Account Name</label>
+  <input type="password" class="form-control" id="accname">
+</div>	
+
+<div class="form-group">
+  <label for="accnum">Account Number</label>
+  <input type="password" class="form-control" id="accnum">
+</div>	
+
+    <div class="form-group">
+  <label for="user">Amount</label>
+  <input type="text" class="form-control" id="amount">
+</div>
+
+<div class="date-form">
+    
+<div class="form-horizontal">
+    <div class="control-group">
+        <label for="date-picker-1" class="control-label"> Transaction Date <span class="glyphicon glyphicon-calendar"> </span>
+
+        </label>
+        <div class="controls">
+            <input id="date-picker-1" type="text" class="date-picker form-control" />
+        </div>
+<input type="submit" class="btn btn-info" value="Submit">	
+
+</div>
+    
+</body>
+</html>
